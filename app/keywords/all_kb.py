@@ -3,12 +3,12 @@ from create_bot import admins
 
 def main_kb(user_telegram_id: int):
     kb_list = [[
-                    KeyboardButton(text="📖 О нас"), 
-                    KeyboardButton(text="🧟 Профиль")
+                    KeyboardButton(text="О нас"), 
+                    KeyboardButton(text="Профиль")
                 ],
                 [
-                    KeyboardButton(text="⚙️ Настройки"),
-                    KeyboardButton(text="📚 Каталог")
+                    KeyboardButton(text="Настройки"),
+                    KeyboardButton(text="Каталог")
                 ]]
     
     keyboard = ReplyKeyboardMarkup(
