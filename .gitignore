@@ -1,4 +1,5 @@
 venv
 .env
 test
-task
+task.py
+__pycache__
