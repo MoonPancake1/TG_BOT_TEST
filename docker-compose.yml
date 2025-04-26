@@ -8,14 +8,14 @@ services:
     env_file: .env
     depends_on:
       - db
-    volume:
+    volumes:
       - ./database.db:/app/database.db
   db:
     image: postgres:13-alpine
     container_name: bot_db
     restart: unless-stopped
     env_file: .env
-    volume: 
+    volumes: 
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
